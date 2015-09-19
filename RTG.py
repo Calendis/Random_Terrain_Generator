@@ -5,7 +5,7 @@ print(chosen_array)
 from math import sin
 
 pygame.init()
-screen = pygame.display.set_mode((800, 600))
+screen = pygame.display.set_mode((1200, 900))
 screen_width = pygame.Surface.get_width(screen)
 screen_height = pygame.Surface.get_height(screen)
 
@@ -99,11 +99,7 @@ def start_display():
 						lastrand = Rand.randint(-chosen_array[0], chosen_array[0])
 						firstrand = True
 					else:
-						if Rand.randint(0, 1):
-							lastrand = sin(i/50)*50
-						else:
-							lastrand = sin(i/50)*50
-
+						lastrand = sin(i/50)*chosen_array[0]
 					
 					
 						
