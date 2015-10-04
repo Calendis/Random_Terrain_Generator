@@ -8,7 +8,8 @@ global chosen_array
 
 terrain_presets = [original1, original2, original3, plains, mountains, random_terrain, 
 downslopes, upslopes, iceplains, hills, volcanism, spires, rollinghills, pinkhills, bloodspires, 
-mesa, sinewave, purple_mountains, slight_hills]
+mesa, sinewave, purple_mountains, slight_hills, void_rip, blue_spires,
+ marc_hills, bars, obsidian, icebergs]
 
 
 def start_up():
