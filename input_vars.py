@@ -7,9 +7,9 @@ custom_chosen = False
 global chosen_array
 
 terrain_presets = [original1, original2, original3, plains, mountains, random_terrain, 
-downslopes, upslopes, iceplains, hills, volcanism, spires, rollinghills, pinkhills, bloodspires, 
+downslopes, upslopes, iceplains, hills, forest, spires, rollinghills, pinkhills, bloodspires, 
 mesa, sinewave, purple_mountains, slight_hills, void_rip, blue_spires,
- marc_hills, bars, obsidian, icebergs]
+ marc_hills, bars, obsidian, icebergs, ecf, mountains2]
 
 
 def start_up():
@@ -66,9 +66,11 @@ def beginCustom():
 	custom_terrain_G = int(input(" Enter an RGB green value: "))
 	custom_terrain_B = int(input(" Enter a RGB blue value: "))
 	custom_terrain_coloursharpness = int(input(" Enter a colour sharpness: "))
+	custom_terrain_treechance = int(input(" Enter a tree chance: "))
+
 	global chosen_array
 	chosen_array = [custom_terrain_intensity, custom_terrain_height, custom_terrain_scalex, custom_terrain_engine,
-	custom_terrain_R, custom_terrain_G, custom_terrain_B, custom_terrain_coloursharpness]
+	custom_terrain_R, custom_terrain_G, custom_terrain_B, custom_terrain_coloursharpness, custom_terrain_treechance]
 	global custom_chosen
 	custom_chosen = True
 	beginGeneration()
