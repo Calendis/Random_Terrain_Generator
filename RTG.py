@@ -222,4 +222,8 @@ def start_display():
 		pygame.display.flip()
 
 
+<<<<<<< HEAD
 start_display()
+=======
+start_display()
+>>>>>>> 93df8da647be5b1268b74d9e507c41b9ba245ab9

@@ -1,6 +1,7 @@
 import random as Rand
 from math import sin
 from presets import *
+#xyzzy
 
 
 custom_chosen = False
@@ -77,4 +78,8 @@ def beginCustom():
 
 
 
+<<<<<<< HEAD
 start_up()
+=======
+start_up()
+>>>>>>> 93df8da647be5b1268b74d9e507c41b9ba245ab9
