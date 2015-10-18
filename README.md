@@ -8,4 +8,4 @@ Requires PyGame installed for Python 3
 Instructions:
 Run RTG.py with Python3
 
-(This line was added locally and is a test.)
+()

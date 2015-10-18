@@ -1,7 +1,6 @@
 import random as Rand
 from math import sin
 from presets import *
-#xyzzy
 
 
 custom_chosen = False
