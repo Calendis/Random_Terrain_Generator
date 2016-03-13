@@ -9,7 +9,8 @@ global chosen_array
 terrain_presets = [original1, original2, original3, plains, mountains, random_terrain, 
 downslopes, upslopes, iceplains, hills, forest, spires, rollinghills, pinkhills, bloodspires, 
 mesa, sinewave, purple_mountains, slight_hills, void_rip, blue_spires,
- marc_hills, bars, obsidian, icebergs, ecf, mountains2]
+ marc_hills, bars, obsidian, icebergs, ecf, mountains2, ice_mountains, mesa2, midnightplains, 
+ average_terrain, gloopy_hills, lands_of_clay]
 
 
 def start_up():
@@ -77,8 +78,4 @@ def beginCustom():
 
 
 
-<<<<<<< HEAD
 start_up()
-=======
-start_up()
->>>>>>> 93df8da647be5b1268b74d9e507c41b9ba245ab9
