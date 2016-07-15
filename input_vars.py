@@ -6,10 +6,8 @@ from presets import *
 custom_chosen = False
 global chosen_array
 
-terrain_presets = [original1, original2, original3, plains, mountains, random_terrain, 
-downslopes, upslopes, iceplains, hills, forest, spires, rollinghills, pinkhills, bloodspires, 
-mesa, sinewave, purple_mountains, slight_hills, void_rip, blue_spires,
- marc_hills, bars, obsidian, icebergs, ecf, mountains2]
+terrain_presets = [original1, original2, original3, plains, mountains, forest,
+mountains2, ice_mountains, lands_of_clay, perlin_hills, varied_perlin_hills]
 
 
 def start_up():
@@ -19,12 +17,11 @@ def start_up():
 		beginGeneration()
 	elif choose_option == "help":
 		print("\n Here is a list of terrain presets:")
-		print(terrain_presets)
+		for i in range(len(terrain_presets)):
+			print(terrain_presets[i])
+		start_up()
 	elif choose_option == "custom":
 		beginCustom()
-
-
-
 		start_up()
 	else:
 		print("\nINVALID OPTION\n\n")
@@ -42,16 +39,16 @@ def beginGeneration():
 		except:
 			print("Invalid ID: Enter an integer.")
 			beginGeneration()
-	
-		chosen_array = int(chosen_array)
-		if chosen_array > len(terrain_presets)-1:
-			print("Invalid ID: Number too high.\n")
-			beginGeneration()
-		elif chosen_array < 0:
-			print("Invalid ID: Number too low.\n")
-			beginGeneration()
 		else:
-			chosen_array = terrain_presets[chosen_array]
+			chosen_array = int(chosen_array)
+			if chosen_array > len(terrain_presets)-1:
+				print("Invalid ID: Number too high.\n")
+				beginGeneration()
+			elif chosen_array < 0:
+				print("Invalid ID: Number too low.\n")
+				beginGeneration()
+			else:
+				chosen_array = terrain_presets[chosen_array]
 	else:
 		chosen_array = chosen_array
 
